@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="display-4 text-center mb-5">Unit Converter</h1>
+            </div>           
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 offset-md-1">
+                <div class="form-group">
+                    <h3 class="mb-3">Convert from unit:</h3>
+                    <select class="form-control" id="selectFrom">
+                        <option value="Centimeter">Centimeter</option>
+                        <option value="Foot">Foot</option>
+                        <option value="Inch">Inch</option>
+                        <option value="Kilometer">Kilometer</option>
+                        <option value="Meter">Meter</option>
+                        <option value="Mile">Mile</option>
+                        <option value="Milimeter">Milimeter</option>
+                        <option value="Yard">Yard</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3 class="mb-3">To unit:</h3>
+                <div class="form-group">
+                    <select class="form-control" id="selectTo">
+                        <option value="Centimeter">Centimeter</option>
+                        <option value="Foot">Foot</option>
+                        <option value="Inch">Inch</option>
+                        <option value="Kilometer">Kilometer</option>
+                        <option selected value="Meter">Meter</option>
+                        <option value="Mile">Mile</option>
+                        <option value="Milimeter">Milimeter</option>
+                        <option value="Yard">Yard</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">            
+            <div class="col-md-10 offset-md-1 mt-3">
+                <h3 class="mb-3">Quantity to conver:</h3>
+                <div class="form-group">
+                    <input type="number" id="qty" class="form-control form-control-lg" min="0" value="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="result">            
+            <div class="col-md-10 offset-md-1 mt-3">
+                <h3 class="mb-3">Result:</h3>
+                <div id="output">
+                    <div class="card alert-warning mb-2">
+                        <div class="card-block">
+                            <h4 id="resultTitle"></h4>
+                            <h4 id="resultValue"></h4>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
